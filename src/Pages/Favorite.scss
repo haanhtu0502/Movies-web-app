@@ -1,0 +1,19 @@
+@use '../scss/' as *;
+
+.title-center{
+    @include flex(center,center);
+    h1{
+        color: red;
+    }
+}
+
+.movie-grid{
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   img{
+    margin-bottom: .6rem;
+   }
+}

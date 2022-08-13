@@ -1,0 +1,38 @@
+@use '../../scss/' as *;
+
+.movie-list {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;  
+    cursor: grab;
+    
+    img {
+        width: 15%;
+        
+        object-fit: contain;
+        display: inline-block;
+        margin-right: .875rem;
+        padding: .5rem 0;
+        border-radius: $border-radius;
+        transition: transform .3s ease;
+
+        @include tablet {
+            width: 36%;
+        }
+
+        @include mobile {
+            width: 40%;
+        }
+
+        &:hover {
+            transform: scale(1.08);
+        }
+    }
+
+   
+
+    &::-webkit-scrollbar {
+        display: none;
+
+    }
+}
